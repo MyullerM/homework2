@@ -54,14 +54,30 @@ public class Main {
             int personFits = 102;
             int seatPlace = 60;
             int standingPlace = personFits - seatPlace;
-            int sitsFreely = 20;
             int freeSeats = personFits - seatsOccupied;
             if (needPlaces <= freeSeats) {
                 System.out.println("Если свободных мест " + freeSeats + ", то " + needPlaces + " человек уместятся в вагоне");
             } else if (needPlaces > freeSeats) {
                 System.out.println("Если свободных мест " + freeSeats + ", то " + needPlaces + " человек не уместятся в вагоне");
-
             }
+            int busySedentary = 20;
+            int freeSeated = seatPlace - busySedentary;
+            int needToBePlanted = 30;
+            if (needToBePlanted <= freeSeated) {
+                System.out.println("Если свободных сидячих мест " + freeSeated + " ,то можно посадить " + needToBePlanted + " людей.");
+            } else {
+                System.out.println(" Если свободных сидячих мест " + freeSeated + " ,то нельзя посадить " + needToBePlanted + " людей.");
+            }
+            int busyStanding = 20;
+            int freeStanding = standingPlace - busyStanding;
+            int needToStand = 40;
+            if (needToStand <= freeStanding) {
+                System.out.println("Если свободных стоячих мест " + freeStanding + " ,то может зайти в вагон " + needToStand + " человек.");
+            } else {
+                System.out.println("Если свободных стоячих мест " + freeStanding + " ,то " + needToStand + " людей не уместится в вагоне.");
+            }
+            System.out.println("Задача 7");
+
 
         }
     }
