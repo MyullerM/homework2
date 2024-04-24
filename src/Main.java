@@ -77,8 +77,21 @@ public class Main {
                 System.out.println("Если свободных стоячих мест " + freeStanding + " ,то " + needToStand + " людей не уместится в вагоне.");
             }
             System.out.println("Задача 7");
-
-
+            int one = 1;
+            int two = 250;
+            int three = 30;
+            boolean theFirstNumberIsGreaterThanTheRest = one > two && one > three;
+            if (theFirstNumberIsGreaterThanTheRest) {
+                System.out.println("Первое число больше остальных");
+            }
+            boolean theSecondNumberIsGreaterThanTheRest = two > one && two > three;
+            if (theSecondNumberIsGreaterThanTheRest) {
+                System.out.println("Второе число больше остальных");
+            }
+            boolean theThirdNumberIsGreaterThanTheRest = three > one && three > two;
+            if (theThirdNumberIsGreaterThanTheRest) {
+                System.out.println("Третье число больше остальных");
+            }
         }
     }
 }
