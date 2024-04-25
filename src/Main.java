@@ -58,16 +58,16 @@ public class Main {
             } else System.out.println(" Вагон полностью забит.");
 
             System.out.println("Задача 7");
-            int one = 1;
-            int two = 2;
+            int one = 10;
+            int two = 20;
             int three = 3;
-            boolean theFirstNumberIsGreaterThanTheRest = one > two && one > three;
-            boolean theSecondNumberIsGreaterThanTheRest = two > one && two > three;
-            if (theFirstNumberIsGreaterThanTheRest) {
+            if (one > two && one > three) {
                 System.out.println("Первое число больше остальных");
-            } else if (theSecondNumberIsGreaterThanTheRest) {
+            } else if (two > one && two > three) {
                 System.out.println("Второе число больше остальных");
-            } else System.out.println("Третье число больше остальных");
+            } else {
+                System.out.println("Третье число больше остальных");
+            }
 
         }
     }
