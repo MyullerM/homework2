@@ -9,12 +9,11 @@ public class Main {
 
             System.out.println("Задача 2");
             int temp = 4;
-            if (temp < 5) {
+            if (temp <= 5) {
                 System.out.println(" На улице холодно, нужно надеть шапку");
             } else if (temp > 5) {
                 System.out.println(" Сегодня тепло, можно идти без шапки");
             }
-
             int airTemperature = 9;
             if (airTemperature > 5) {
                 System.out.println(" На улице " + airTemperature + " гадусов,  можно идти без шапки.");
@@ -49,9 +48,9 @@ public class Main {
                 System.out.println(" Если возраст ребенка равен " + child + ", то ему можно кататься на аттракционе без сопровождения.");
             }
             System.out.println("Задача 6");
+            int personFits = 102;
             int needPlaces = 70;
             int seatsOccupied = 40;
-            int personFits = 102;
             int seatPlace = 60;
             int standingPlace = personFits - seatPlace;
             int freeSeats = personFits - seatsOccupied;
@@ -78,20 +77,16 @@ public class Main {
             }
             System.out.println("Задача 7");
             int one = 1;
-            int two = 250;
-            int three = 30;
+            int two = 2;
+            int three = 3;
             boolean theFirstNumberIsGreaterThanTheRest = one > two && one > three;
+            boolean theSecondNumberIsGreaterThanTheRest = two > one && two > three;
             if (theFirstNumberIsGreaterThanTheRest) {
                 System.out.println("Первое число больше остальных");
-            }
-            boolean theSecondNumberIsGreaterThanTheRest = two > one && two > three;
-            if (theSecondNumberIsGreaterThanTheRest) {
+            } else if (theSecondNumberIsGreaterThanTheRest) {
                 System.out.println("Второе число больше остальных");
-            }
-            boolean theThirdNumberIsGreaterThanTheRest = three > one && three > two;
-            if (theThirdNumberIsGreaterThanTheRest) {
-                System.out.println("Третье число больше остальных");
-            }
+            } else System.out.println("Третье число больше остальных");
+
         }
     }
 }
